@@ -30,5 +30,3 @@ I'm affiliated with and supported by the [Munich Center for Machine Learning](ht
 
 My main research interests are multilingual language modelling, machine translation, and multilingual evaluation, particularly for low-resource settings.
 I'm also interested in how human biases are reified in language models, and how to address them.
-
-<!--During the second half of 2025 I was on an internship in Berlin with the wonderful [Lilt](https://lilt.com).-->

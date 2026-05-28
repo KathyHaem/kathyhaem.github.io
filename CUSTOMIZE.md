@@ -1,4 +1,3 @@
-
 <!--ts-->
 
   - [Project structure](#project-structure)
@@ -81,7 +80,6 @@ If you have any questions, please check if it was not already answered in the [F
 > Note that the `url` and `baseurl` settings are used to generate the links of the website, as explained in the [install instructions](INSTALL.md).
 
 All changes made to this file are only visible after you rebuild the website. That means that you need to run `bundle exec jekyll serve` again if you are running the website locally or push your changes to GitHub if you are using GitHub Pages. All other changes are visible immediately, you only need to refresh the page.
-
 
 ## Modifying the CV information
 
@@ -234,7 +232,6 @@ Then in your landing page template:
 ### Collections with categories and tags
 
 If you want to add category and tag support (like the blog posts have), you need to configure the `jekyll-archives` section in [\_config.yml](_config.yml). See how this is done with the `books` collection for reference. For more details, check the [jekyll-archives-v2 documentation](https://george-gca.github.io/jekyll-archives-v2/).
-
 
 ## Publications
 
@@ -407,7 +404,7 @@ third_party_libraries:
 ```
 
 - `download`: When `false` (default), libraries are loaded from CDNs. When `true`, the specified library versions are downloaded during build and served from your site.
-   This can improve performance but increases your repository size.
+  This can improve performance but increases your repository size.
 - `version`: Specifies which version of each library to use. Update this to use a newer version.
 - `url`: Template URLs for loading the library. The `{{version}}` placeholder is replaced with the version number.
 - `integrity`: [Subresource Integrity (SRI)](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) hashes ensure that the library hasn't been tampered with. When updating a library version, you should also update its integrity hash.
@@ -445,7 +442,6 @@ exclude:
 
 Here is a list of the main components that you may want to delete, and how to do it.
 Don't forget if you delete a page to update the `nav_order` of the remaining pages.
-
 
 ### You can also remove pages through commenting out front-matter blocks
 
@@ -537,7 +533,6 @@ To remove the repositories, you can:
 
 - delete the repositories page [\_pages/repositories.md](_pages/repositories.md)
 - delete [\_includes/repository/](_includes/repository/) directory
-
 
 ## Customizing fonts, spacing, and more
 
