@@ -1,3 +1,7 @@
+# kathyhaem.github.io
+
+This is forked from the [al-folio theme](https://github.com/alshedivat/al-folio).
+
 # al-folio
 
 ## Getting started
