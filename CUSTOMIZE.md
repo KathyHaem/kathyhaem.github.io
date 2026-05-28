@@ -92,8 +92,8 @@ The project is structured as follows, focusing on the main components that you w
 
 ## Configuration
 
-The configuration file [\_config.yml](_config.yml) contains the main configuration of the website. 
-Most of the settings is self-explanatory and we also tried to add as much comments as possible. 
+The configuration file [\_config.yml](_config.yml) contains the main configuration of the website.
+Most of the settings is self-explanatory and we also tried to add as much comments as possible.
 If you have any questions, please check if it was not already answered in the [FAQ](FAQ.md).
 
 > Note that the `url` and `baseurl` settings are used to generate the links of the website, as explained in the [install instructions](INSTALL.md).
@@ -157,8 +157,8 @@ You can add news in the about page by adding new Markdown files in the [\_news](
 
 ## Adding Collections
 
-This Jekyll theme implements [collections](https://jekyllrb.com/docs/collections/) to let you break up your work into categories. 
-The theme comes with three default collections: `news`, `projects`, and `books`. 
+This Jekyll theme implements [collections](https://jekyllrb.com/docs/collections/) to let you break up your work into categories.
+The theme comes with three default collections: `news`, `projects`, and `books`.
 Items from the `news` collection are automatically displayed on the home page, while items from the `projects` collection are displayed on a responsive grid on the projects page, and items from the `books` collection are displayed on its own `bookshelf` page inside `submenus`.
 
 You can easily create your own collections for any type of content—teaching materials, courses, apps, short stories, or whatever suits your needs.
@@ -256,16 +256,16 @@ If you want to add category and tag support (like the blog posts have), you need
 
 ## Publications
 
-To add publications create a new entry in the [\_bibliography/papers.bib](_bibliography/papers.bib) file. 
-You can find the BibTeX entry of a publication in Google Scholar by clicking on the quotation marks below the publication title, then clicking on "BibTeX", or also in the conference page itself. 
+To add publications create a new entry in the [\_bibliography/papers.bib](_bibliography/papers.bib) file.
+You can find the BibTeX entry of a publication in Google Scholar by clicking on the quotation marks below the publication title, then clicking on "BibTeX", or also in the conference page itself.
 By default, the publications will be sorted by year and the most recent will be displayed first. You can change this behavior and more in the `Jekyll Scholar` section in [\_config.yml](_config.yml) file.
 
-You can add extra information to a publication, like a PDF file in the `assets/pdfs/` directory and add the path to the PDF file in the BibTeX entry with the `pdf` field. 
+You can add extra information to a publication, like a PDF file in the `assets/pdfs/` directory and add the path to the PDF file in the BibTeX entry with the `pdf` field.
 Some of the supported fields are: `abstract`, `altmetric`, `annotation`, `arxiv`, `bibtex_show`, `blog`, `code`, `dimensions`, `doi`, `eprint`, `hal`, `html`, `isbn`, `pdf`, `pmid`, `poster`, `slides`, `supp`, `video`, and `website`.
 
 ### Author annotation
 
-In publications, the author entry for yourself is identified by string array `scholar:last_name` and string array `scholar:first_name` in [\_config.yml](_config.yml). 
+In publications, the author entry for yourself is identified by string array `scholar:last_name` and string array `scholar:first_name` in [\_config.yml](_config.yml).
 For example, if you have the following entry in your [\_config.yml](_config.yml):
 
 ```yaml
@@ -274,9 +274,9 @@ scholar:
   first_name: [Albert, A.]
 ```
 
-If the entry matches one form of the last names and the first names, it will be underlined. 
+If the entry matches one form of the last names and the first names, it will be underlined.
 
-Keep meta-information about your co-authors in [\_data/coauthors.yml](_data/coauthors.yml) and Jekyll will insert links to their webpages automatically. 
+Keep meta-information about your co-authors in [\_data/coauthors.yml](_data/coauthors.yml) and Jekyll will insert links to their webpages automatically.
 The co-author data format is as follows, with the last names lower cased and without accents as the key:
 
 ```yaml
@@ -327,10 +327,10 @@ You can implement your own buttons by editing the [\_layouts/bib.liquid](_layout
 
 ## Changing theme color
 
-A variety of beautiful theme colors have been selected for you to choose from. 
-The default is purple, but you can quickly change it by editing the `--global-theme-color` variable in the [\_sass/\_themes.scss](_sass/_themes.scss) file. 
-Other color variables are listed there as well. 
-The stock theme color options available can be found at [\_sass/\_variables.scss](_sass/_variables.scss). 
+A variety of beautiful theme colors have been selected for you to choose from.
+The default is purple, but you can quickly change it by editing the `--global-theme-color` variable in the [\_sass/\_themes.scss](_sass/_themes.scss) file.
+Other color variables are listed there as well.
+The stock theme color options available can be found at [\_sass/\_variables.scss](_sass/_variables.scss).
 You can also add your own colors to this file assigning each a name for ease of use across the template.
 
 ## Customizing layout and UI
@@ -351,12 +351,12 @@ max_width: 930px
 
 ## Adding social media information
 
-You can add your social media links by adding the specified information in the [\_data/socials.yml](_data/socials.yml) file. 
+You can add your social media links by adding the specified information in the [\_data/socials.yml](_data/socials.yml) file.
 This information will appear at the bottom of the `About` page and in the search results by default, but this could be changed to appear at the header of the page by setting `enable_navbar_social: true` and doesn't appear in the search by setting `socials_in_search: false`, both in [\_config.yml](_config.yml).
 
 ## Adding a newsletter
 
-You can add a newsletter subscription form by adding the specified information at the `newsletter` section in the [\_config.yml](_config.yml) file. 
+You can add a newsletter subscription form by adding the specified information at the `newsletter` section in the [\_config.yml](_config.yml) file.
 To set up a newsletter, you can use a service like [Loops.so](https://loops.so/), which is the current supported solution. Once you have set up your newsletter, you can add the form [endpoint](https://loops.so/docs/forms/custom-form) to the `endpoint` field in the `newsletter` section of the [\_config.yml](_config.yml) file.
 
 Depending on your specified footer behavior, the sign up form either will appear at the bottom of the `About` page and at the bottom of blogposts if `related_posts` are enabled, or in the footer at the bottom of each page.
@@ -424,7 +424,7 @@ third_party_libraries:
       js: "sha256-..."
 ```
 
-- `download`: When `false` (default), libraries are loaded from CDNs. When `true`, the specified library versions are downloaded during build and served from your site. 
+- `download`: When `false` (default), libraries are loaded from CDNs. When `true`, the specified library versions are downloaded during build and served from your site.
    This can improve performance but increases your repository size.
 - `version`: Specifies which version of each library to use. Update this to use a newer version.
 - `url`: Template URLs for loading the library. The `{{version}}` placeholder is replaced with the version number.
@@ -461,7 +461,7 @@ exclude:
   - assets/jupyter/blog.ipynb
 ```
 
-Here is a list of the main components that you may want to delete, and how to do it. 
+Here is a list of the main components that you may want to delete, and how to do it.
 Don't forget if you delete a page to update the `nav_order` of the remaining pages.
 
 

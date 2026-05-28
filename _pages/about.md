@@ -8,7 +8,7 @@ profile:
   align: right
   image: profile_2026.jpg
   image_circular: true # crops the image to make it circular
-  more_info: 
+  more_info:
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
@@ -23,8 +23,8 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-:wave: My name is Kathy Hämmerl. 
-I am a PhD student at [TU Munich](https://www.tum.de) in Computer Science (though I spent much of my PhD at [CIS, LMU](https://www.cis.lmu.de)). 
+:wave: My name is Kathy Hämmerl.
+I am a PhD student at [TU Munich](https://www.tum.de) in Computer Science (though I spent much of my PhD at [CIS, LMU](https://www.cis.lmu.de)).
 My supervisor is [Alex Fraser](https://alexfraser.github.io/) at TUM, and [Jindřich Libovický](https://ufal.mff.cuni.cz/jindrich-libovicky) from Charles University, Prague, has mentored me since my Master's thesis.
 I'm affiliated with and supported by the [Munich Center for Machine Learning](https://mcml.ai).
 
