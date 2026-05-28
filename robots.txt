@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://kathyhaem.github.io/sitemap.xml
