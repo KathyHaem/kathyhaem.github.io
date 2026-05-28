@@ -1,0 +1,267 @@
+---
+---
+
+@inproceedings{schmidtova-etal-2026-important,
+    title = "How Important is `Perfect' {E}nglish for Machine Translation Prompts?",
+    author = {Schmidtov{\'a}, Patr{\'i}cia  and
+      Bafna, Niyati  and
+      Aycock, Seth  and
+      Vico, Gianluca  and
+      Kamzela, Wiktor  and
+      H{\"a}mmerl, Kathy  and
+      Zouhar, Vil{\'e}m},
+    editor = "Demberg, Vera  and
+      Inui, Kentaro  and
+      Marquez, Llu{\'i}s",
+    booktitle = "Findings of the {A}ssociation for {C}omputational {L}inguistics: {EACL} 2026",
+    month = mar,
+    year = "2026",
+    address = "Rabat, Morocco",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.findings-eacl.38/",
+    doi = "10.18653/v1/2026.findings-eacl.38",
+    pages = "760--777",
+    ISBN = "979-8-89176-386-9",
+    abstract = "Large language models (LLMs) show state-of-the-art performance in machine translation, but are also known to be sensitive to errors in user prompts. Given these models are largely trained on and respond best to prompts in standard English, this may affect the quality of LLM outputs for second language English speakers as well as real-world lay users, with potentially disproportionate effects on the former. We explore this effect by modeling a range of error types exhibited by such users, motivated by studies of L2 English, and quantifying their impact on LLM performance. We work with two related tasks: machine translation and machine translation evaluation. We find that LLMs-as-MT are brittle to natural spelling errors but not to errors at the phrasal level. However, the variance in quality caused by these errors is lower than the variance over the initial prompt choice, suggesting that ``perfect English'' for a given prompt is less important than choosing a good prompt. Since lay users and L2 speakers may use non-optimal prompts as well as display imperfect language skills, our work calls for increasing the resilience of model performance to both these phenomena to best serve a diverse user base, both from a robustness and fairness perspective.",
+    selected = {true},
+    bibtex_show = {true},
+    preview="mt_errors.png"
+}
+
+@inproceedings{okabe-etal-2025-findings,
+    title = "Findings of the {WMT} 2025 Shared Task {LLM}s with Limited Resources for {S}lavic Languages: {MT} and {QA}",
+    author = "Okabe, Shu  and
+      Dementieva, Daryna  and
+      Di Marco, Marion  and
+      Edman, Lukas  and
+      H{\"a}mmerl, Kathy  and
+      M{\v{e}}{\v{s}}kank, Marko  and
+      Hendrichowa, Anita  and
+      Fraser, Alexander",
+    editor = "Haddow, Barry  and
+      Kocmi, Tom  and
+      Koehn, Philipp  and
+      Monz, Christof",
+    booktitle = "Proceedings of the Tenth Conference on Machine Translation",
+    month = nov,
+    year = "2025",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.wmt-1.27/",
+    doi = "10.18653/v1/2025.wmt-1.27",
+    pages = "503--519",
+    ISBN = "979-8-89176-341-8",
+    abstract = "We present the findings of the WMT 2025 Shared Task LLMs with Limited Resources for Slavic Languages. This shared task focuses on training LLMs using limited data and compute resources for three Slavic languages: Upper Sorbian (hsb), Lower Sorbian (dsb), and Ukrainian (uk), with the objective to develop and improve LLMs for these languages. We consider two tasks which are to be evaluated jointly: Machine Translation (MT) and Multiple-Choice Question Answering (QA). In total, three teams participated in this shared task, with submissions from all three teams for the Sorbian languages and one submission for Ukrainian. All submissions led to an improvement compared to the baseline Qwen2.5-3B model through varying fine-tuning strategies. We note, however, that training purely on MT degrades original QA capabilities. We also report further analyses on the submissions, including MT evaluation using advanced neural metrics for Ukrainian, as well as manual annotation and comparison to the current Sorbian machine translator.",
+    selected = {false},
+    bibtex_show = {true},
+    preview="findings_2025.png"
+}
+
+@inproceedings{friedrich-etal-2025-multilingual,
+    title = "Multilingual Text-to-Image Generation Magnifies Gender Stereotypes",
+    author = {Friedrich, Felix  and
+      H{\"a}mmerl, Kathy  and
+      Schramowski, Patrick  and
+      Brack, Manuel  and
+      Libovick{\'y}, Jind{\v{r}}ich  and
+      Kersting, Kristian  and
+      Fraser, Alexander},
+    editor = "Che, Wanxiang  and
+      Nabende, Joyce  and
+      Shutova, Ekaterina  and
+      Pilehvar, Mohammad Taher",
+    booktitle = "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2025",
+    address = "Vienna, Austria",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.acl-long.966/",
+    doi = "10.18653/v1/2025.acl-long.966",
+    pages = "19656--19679",
+    ISBN = "979-8-89176-251-0",
+    abstract = "Text-to-image (T2I) generation models have achieved great results in image quality, flexibility, and text alignment, leading to widespread use. Through improvements in multilingual abilities, a larger community can access this technology. Yet, we show that multilingual models suffer from substantial gender bias. Furthermore, the expectation that results should be similar across languages does not hold. We introduce MAGBIG, a controlled benchmark designed to study gender bias in multilingual T2I models, and use it to assess the impact of multilingualism on gender bias. To this end, we construct a set of multilingual prompts that offers a carefully controlled setting accounting for the complex grammatical differences influencing gender across languages. Our results show strong gender biases and notable language-specific differences across models. While we explore prompt engineering strategies to mitigate these biases, we find them largely ineffective and sometimes even detrimental to text-to-image alignment. Our analysis highlights the need for research on diverse language representations and greater control over bias in T2I models.",
+    bibtex_show = {true},
+    preview="magbig.png"
+}
+
+@inproceedings{okabe-etal-2025-improving,
+    title = "Improving Parallel Sentence Mining for Low-Resource and Endangered Languages",
+    author = {Okabe, Shu  and
+      H{\"a}mmerl, Kathy  and
+      Fraser, Alexander},
+    editor = "Che, Wanxiang  and
+      Nabende, Joyce  and
+      Shutova, Ekaterina  and
+      Pilehvar, Mohammad Taher",
+    booktitle = "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)",
+    month = jul,
+    year = "2025",
+    address = "Vienna, Austria",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.acl-short.17/",
+    doi = "10.18653/v1/2025.acl-short.17",
+    pages = "196--205",
+    ISBN = "979-8-89176-252-7",
+    abstract = "While parallel sentence mining has been extensively covered for fairly well-resourced languages, pairs involving low-resource languages have received comparatively little attention.To address this gap, we present Belopsem, a benchmark of new datasets for parallel sentence mining on three language pairs where the source side is low-resource and endangered: Occitan-Spanish, Upper Sorbian-German, and Chuvash-Russian. These combinations also reflect varying linguistic similarity within each pair. We compare three language models in an established parallel sentence mining pipeline and apply two types of improvements to one of them, Glot500. We observe better mining quality overall by both applying alignment post-processing with an unsupervised aligner and using a cluster-based isotropy enhancement technique. These findings are crucial for optimising parallel data extraction for low-resource languages in a realistic way.",
+    bibtex_show = {true},
+    preview="belopsem.png"
+}
+
+@inproceedings{hammerl-etal-2025-beyond,
+    title = "Beyond Literal Token Overlap: Token Alignability for Multilinguality",
+    author = {H{\"a}mmerl, Kathy  and
+      Limisiewicz, Tomasz  and
+      Libovick{\'y}, Jind{\v{r}}ich  and
+      Fraser, Alexander},
+    editor = "Chiruzzo, Luis  and
+      Ritter, Alan  and
+      Wang, Lu",
+    booktitle = "Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 2: Short Papers)",
+    month = apr,
+    year = "2025",
+    address = "Albuquerque, New Mexico",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.naacl-short.63/",
+    doi = "10.18653/v1/2025.naacl-short.63",
+    pages = "756--767",
+    ISBN = "979-8-89176-190-2",
+    abstract = "Previous work has considered token overlap, or even similarity of token distributions, as predictors for multilinguality and cross-lingual knowledge transfer in language models. However, these very literal metrics assign large distances to language pairs with different scripts, which can nevertheless show good cross-linguality. This limits the explanatory strength of token overlap for knowledge transfer between language pairs that use distinct scripts or follow different orthographic conventions. In this paper, we propose subword token alignability as a new way to understand the impact and quality of multilingual tokenisation. In particular, this metric predicts multilinguality much better when scripts are disparate and the overlap of literal tokens is low. We analyse this metric in the context of both encoder and decoder models, look at data size as a potential distractor, and discuss how this insight may be applied to multilingual tokenisation in future work. We recommend our subword token alignability metric for identifying optimal language pairs for cross-lingual transfer, as well as to guide the construction of better multilingual tokenisers in the future. We publish our code and reproducibility details.",
+    selected = {true},
+    bibtex_show = {true},
+    preview="alignability.png"
+}
+
+@inproceedings{hammerl-etal-2024-understanding,
+    title = "Understanding Cross-Lingual {A}lignment{---}{A} Survey",
+    author = {H{\"a}mmerl, Kathy  and
+      Libovick{\'y}, Jind{\v{r}}ich  and
+      Fraser, Alexander},
+    editor = "Ku, Lun-Wei  and
+      Martins, Andre  and
+      Srikumar, Vivek",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2024",
+    month = aug,
+    year = "2024",
+    address = "Bangkok, Thailand",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.findings-acl.649/",
+    doi = "10.18653/v1/2024.findings-acl.649",
+    pages = "10922--10943",
+    abstract = "Cross-lingual alignment, the meaningful similarity of representations across languages in multilingual language models, has been an active field of research in recent years. We survey the literature of techniques to improve cross-lingual alignment, providing a taxonomy of methods and summarising insights from throughout the field. We present different understandings of cross-lingual alignment and their limitations. We provide a qualitative summary of results from a number of surveyed papers. Finally, we discuss how these insights may be applied not only to encoder models, where this topic has been heavily studied, but also to encoder-decoder or even decoder-only models, and argue that an effective trade-off between language-neutral and language-specific information is key.",
+    selected = {true},
+    bibtex_show = {true},
+    preview="survey.png"
+}
+
+@inproceedings{hammerl-etal-2024-cuni,
+    title = "{CUNI} and {LMU} Submission to the {MRL} 2024 Shared Task on Multi-lingual Multi-task Information Retrieval",
+    author = {H{\"a}mmerl, Kathy  and
+      Manea, Andrei-Alexandru  and
+      Vico, Gianluca  and
+      Helcl, Jind{\v{r}}ich  and
+      Libovick{\'y}, Jind{\v{r}}ich},
+    editor = {S{\"a}lev{\"a}, Jonne  and
+      Owodunni, Abraham},
+    booktitle = "Proceedings of the Fourth Workshop on Multilingual Representation Learning (MRL 2024)",
+    month = nov,
+    year = "2024",
+    address = "Miami, Florida, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.mrl-1.29/",
+    doi = "10.18653/v1/2024.mrl-1.29",
+    pages = "357--364",
+    abstract = "We present the joint CUNI and LMU submission to the MRL 2024 Shared Task on Multi-lingual Multi-task Information Retrieval.The shared task objective was to explore how we can deploy modern methods in NLP in multi-lingual low-resource settings, tested on two sub-tasks: Named-entity recognition and question answering.Our solutions to the subtasks are based on data acquisition and model adaptation.We compare the performance of our submitted systems with the translate-test approachwhich proved to be the most useful in the previous edition of the shared task.Our results show that using more data as well as fine-tuning recent multilingual pre-trained models leads to considerable improvements over the translate-test baseline.Our code is available at https://github.com/ufal/mrl2024-multilingual-ir-shared-task.",
+    bibtex_show = {true},
+    preview="mrl_2024.png"
+}
+
+@inproceedings{haemmerl-etal-2023-speaking,
+    title = "Speaking Multiple Languages Affects the Moral Bias of Language Models",
+    author = {H{\"a}mmerl, Kathy  and
+      Deiseroth, Bjoern  and
+      Schramowski, Patrick  and
+      Libovick{\'y}, Jind{\v{r}}ich  and
+      Rothkopf, Constantin  and
+      Fraser, Alexander  and
+      Kersting, Kristian},
+    editor = "Rogers, Anna  and
+      Boyd-Graber, Jordan  and
+      Okazaki, Naoaki",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2023",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.findings-acl.134",
+    doi = "10.18653/v1/2023.findings-acl.134",
+    pages = "2137--2156",
+    abstract = "Pre-trained multilingual language models (PMLMs) are commonly used when dealing with data from multiple languages and cross-lingual transfer. However, PMLMs are trained on varying amounts of data for each language. In practice this means their performance is often much better on English than many other languages. We explore to what extent this also applies to moral norms. Do the models capture moral norms from English and impose them on other languages? Do the models exhibit random and thus potentially harmful beliefs in certain languages? Both these issues could negatively impact cross-lingual transfer and potentially lead to harmful outcomes. In this paper, we (1) apply the MORALDIRECTION framework to multilingual models, comparing results in German, Czech, Arabic, Chinese, and English, (2) analyse model behaviour on filtered parallel subtitles corpora, and (3) apply the models to a Moral Foundations Questionnaire, comparing with human responses from different countries. Our experiments demonstrate that, indeed, PMLMs encode differing moral biases, but these do not necessarily correspond to cultural differences or commonalities in human opinions. We release our code and models.",
+    selected = {true},
+    bibtex_show = {true},
+    preview="moral_dim.png"
+}
+
+@inproceedings{haemmerl-etal-2023-exploring,
+    title = "Exploring Anisotropy and Outliers in Multilingual Language Models for Cross-Lingual Semantic Sentence Similarity",
+    author = {H{\"a}mmerl, Kathy  and
+      Fastowski, Alina  and
+      Libovick{\'y}, Jind{\v{r}}ich  and
+      Fraser, Alexander},
+    editor = "Rogers, Anna  and
+      Boyd-Graber, Jordan  and
+      Okazaki, Naoaki",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2023",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.findings-acl.439",
+    doi = "10.18653/v1/2023.findings-acl.439",
+    pages = "7023--7037",
+    abstract = "Previous work has shown that the representations output by contextual language models are more anisotropic than static type embeddings, and typically display outlier dimensions. This seems to be true for both monolingual and multilingual models, although much less work has been done on the multilingual context. Why these outliers occur and how they affect the representations is still an active area of research. We investigate outlier dimensions and their relationship to anisotropy in multiple pre-trained multilingual language models. We focus on cross-lingual semantic similarity tasks, as these are natural tasks for evaluating multilingual representations. Specifically, we examine sentence representations. Sentence transformers which are fine-tuned on parallel resources (that are not always available) perform better on this task, and we show that their representations are more isotropic. However, we aim to improve multilingual representations in general. We investigate how much of the performance difference can be made up by only transforming the embedding space without fine-tuning, and visualise the resulting spaces. We test different operations: Removing individual outlier dimensions, cluster-based isotropy enhancement, and ZCA whitening. We publish our code for reproducibility.",
+    selected = {true},
+    bibtex_show = {true},
+    preview="outliers.png"
+}
+
+@inproceedings{di-marco-etal-2023-study,
+    title = "A Study on Accessing Linguistic Information in Pre-Trained Language Models by Using Prompts",
+    author = {Di Marco, Marion  and
+      H{\"a}mmerl, Kathy  and
+      Fraser, Alexander},
+    editor = "Bouamor, Houda  and
+      Pino, Juan  and
+      Bali, Kalika",
+    booktitle = "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.emnlp-main.454",
+    doi = "10.18653/v1/2023.emnlp-main.454",
+    pages = "7328--7336",
+    abstract = "We study whether linguistic information in pre-trained multilingual language models can be accessed by human language: So far, there is no easy method to directly obtain linguistic information and gain insights into the linguistic principles encoded in such models. We use the technique of prompting and formulate linguistic tasks to test the LM{'}s access to explicit grammatical principles and study how effective this method is at providing access to linguistic features. Our experiments on German, Icelandic and Spanish show that some linguistic properties can in fact be accessed through prompting, whereas others are harder to capture.",
+    bibtex_show = {true},
+    preview="morph_probing.png"
+}
+
+@inproceedings{hammerl-etal-2022-combining,
+    title = "Combining Static and Contextualised Multilingual Embeddings",
+    author = {H{\"a}mmerl, Kathy  and
+      Libovick{\'y}, Jind{\v{r}}ich  and
+      Fraser, Alexander},
+    editor = "Muresan, Smaranda  and
+      Nakov, Preslav  and
+      Villavicencio, Aline",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2022",
+    month = may,
+    year = "2022",
+    address = "Dublin, Ireland",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.findings-acl.182",
+    doi = "10.18653/v1/2022.findings-acl.182",
+    pages = "2316--2329",
+    abstract = "Static and contextual multilingual embeddings have complementary strengths. Static embeddings, while less expressive than contextual language models, can be more straightforwardly aligned across multiple languages. We combine the strengths of static and contextual models to improve multilingual representations. We extract static embeddings for 40 languages from XLM-R, validate those embeddings with cross-lingual word retrieval, and then align them using VecMap. This results in high-quality, highly multilingual static embeddings. Then we apply a novel continued pre-training approach to XLM-R, leveraging the high quality alignment of our static embeddings to better align the representation space of XLM-R. We show positive results for multiple complex semantic tasks. We release the static embeddings and the continued pre-training code. Unlike most previous work, our continued pre-training approach does not require parallel text.",
+    preview="combining.png",
+    bibtex_show = {true},
+}
