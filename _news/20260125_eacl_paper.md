@@ -12,4 +12,4 @@ You can [find the preprint on arXiv](https://arxiv.org/abs/2507.09509).
 
 We systematically introduced realistic errors into machine translation prompts, tracking when and to what extent model responses begin to degrade.
 
-This project began at the Machine Translation Marathon 2024, led entirely by students, and won funding for student activities from the European Association for Machine Translation in order to continue the work on it.
+This project began at the Machine Translation Marathon 2024, was led entirely by students, and won funding for student activities from the European Association for Machine Translation in order to continue the work on it.

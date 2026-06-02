@@ -24,9 +24,12 @@ latest_posts:
 ---
 
 :wave: My name is Kathy Hämmerl.
-I am a PhD student at [TU Munich](https://www.tum.de) in Computer Science (though I spent much of my PhD at [CIS, LMU](https://www.cis.lmu.de)).
+My pronouns are they/them in English; dey/dem/deren in German.
+
+I am a final-year PhD student at [TU Munich](https://www.tum.de) in Computer Science (though I spent much of my PhD at [CIS, LMU](https://www.cis.lmu.de)).
 My supervisor is [Alex Fraser](https://alexfraser.github.io/) at TUM, and [Jindřich Libovický](https://ufal.mff.cuni.cz/jindrich-libovicky) from Charles University, Prague, has mentored me since my Master's thesis.
 I'm affiliated with and supported by the [Munich Center for Machine Learning](https://mcml.ai).
+In 2024, I went on a research visit to Prague, and in 2025 I completed a six-month internship with [LILT](https://www.lilt.com).
 
 My main research interests are multilingual language modelling, machine translation, and multilingual evaluation, particularly for low-resource settings.
 I'm also interested in how human biases are reified in language models, and how to address them.

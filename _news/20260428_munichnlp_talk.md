@@ -10,4 +10,4 @@ The organisers of [MunichNLP](https://munich-nlp.com/) invited me to present som
 I spoke primarily about cross-lingual representation alignment, my 2024 survey of methods for more aligned encoder models,
 as well as how the tokeniser interacts with representation alignment.
 
-Earlier the same evening, we listened to a remote talk by Yejin Choi---certainly a tough one to follow!
+Earlier the same evening, we listened to a remote talk by Yejin Choi---definitely a tough act to follow!
