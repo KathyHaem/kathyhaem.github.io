@@ -55,6 +55,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/20260428_munichnlp_talk/";
+            },},{id: "news-several-papers-at-wmt-and-emnlp-in-budapest",
+          title: 'Several papers at WMT and EMNLP in Budapest!',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/20261006_emnlp_wmt/";
             },},{
         id: 'social-cv',
         title: 'CV',
