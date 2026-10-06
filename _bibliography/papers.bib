@@ -25,9 +25,10 @@
       archivePrefix={arXiv},
       primaryClass={cs.CL},
       url={https://arxiv.org/abs/2608.03446},
-    abstract = {Multilingual large language models (LLMs) have been shown to perform better on non-English classification tasks when the representations of the given language are more aligned to English within the model. Several cross-lingual alignment (CLA) scores have been proposed for use with LLMs, along with multiple approaches for extracting embeddings from the models. We provide a comparative analysis of 27 CLA score variants, examining how they differ and how well each predicts downstream performance across three tasks. Crucially, while LLMs are widely used for generative tasks such as machine translation, prior work has focused almost exclusively on classification. We therefore investigate whether CLA scores are similarly predictive of translation performance. To enable computing correlations across target languages, we propose a PMI-based translation metric, which is less dependent on the target language and correlates strongly with chrF. We find that CLA with English predicts translation quality comparably to or better than source-target CLA, providing new evidence that LLMs use English as an internal pivot language.},
-    bibtex_show = {true},
-    preview = {value},
+      abstract = {Multilingual large language models (LLMs) have been shown to perform better on non-English classification tasks when the representations of the given language are more aligned to English within the model. Several cross-lingual alignment (CLA) scores have been proposed for use with LLMs, along with multiple approaches for extracting embeddings from the models. We provide a comparative analysis of 27 CLA score variants, examining how they differ and how well each predicts downstream performance across three tasks. Crucially, while LLMs are widely used for generative tasks such as machine translation, prior work has focused almost exclusively on classification. We therefore investigate whether CLA scores are similarly predictive of translation performance. To enable computing correlations across target languages, we propose a PMI-based translation metric, which is less dependent on the target language and correlates strongly with chrF. We find that CLA with English predicts translation quality comparably to or better than source-target CLA, providing new evidence that LLMs use English as an internal pivot language.},
+      bibtex_show = {true},
+      selected = {true},
+      preview = {cla_combination.png},
 }
 
 @inproceedings{zolint-2026,
@@ -41,7 +42,7 @@
     selected = {false},
     bibtex_show = {true},
     abstract = {We present a unified multi-task fine-tuning system submitted to the WMT 2026 Shared Task on Multitask LLMs with Limited Resources (Ukrainian track), covering machine translation, spelling correction, grammar correction, question answering, and mathematical reasoning. Our system is built on Qwen3.5-2B-Instruct and adopts a two-stage training pipeline that gradually introduces heterogeneous tasks while replaying selected data from earlier stages to mitigate catastrophic forgetting. The resulting model achieves a strong balance across all evaluated tasks, consistently outperforming the official baseline and obtaining the best performance on every task except question answering. Our results demonstrate that staged multi-task fine-tuning is an effective strategy for adapting compact multilingual LLMs under limited-resource constraints.},
-    preview = {zolint},
+    preview = {zolint.png},
 }
 
 @inproceedings{okabe-etal-2026-findings,
