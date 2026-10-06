@@ -31,20 +31,6 @@
       preview = {cla_combination.png},
 }
 
-@inproceedings{zolint-2026,
-    author = {Yang, Lingchu and Fu, Zitong and H{\"a}mmerl, Kathy and Ito, Masaki},
-    title = {Zolint at WMT 2026: A Multitask LLM Submission for the Low-Resource Ukrainian Track},
-    booktitle = "Proceedings of the Eleventh Conference on Machine Translation",
-    month = oct,
-    year = "2026",
-    address = "Budapest, Hungary",
-    publisher = "Association for Computational Linguistics",
-    selected = {false},
-    bibtex_show = {true},
-    abstract = {We present a unified multi-task fine-tuning system submitted to the WMT 2026 Shared Task on Multitask LLMs with Limited Resources (Ukrainian track), covering machine translation, spelling correction, grammar correction, question answering, and mathematical reasoning. Our system is built on Qwen3.5-2B-Instruct and adopts a two-stage training pipeline that gradually introduces heterogeneous tasks while replaying selected data from earlier stages to mitigate catastrophic forgetting. The resulting model achieves a strong balance across all evaluated tasks, consistently outperforming the official baseline and obtaining the best performance on every task except question answering. Our results demonstrate that staged multi-task fine-tuning is an effective strategy for adapting compact multilingual LLMs under limited-resource constraints.},
-    preview = {zolint.png},
-}
-
 @inproceedings{okabe-etal-2026-findings,
     title = "{Findings of the WMT26 Shared Task: Multitask LLMs with Limited Resources}",
     author = "Okabe, Shu and
@@ -65,6 +51,20 @@
     preview = {findings_2026.png},
 }
 
+@inproceedings{zolint-2026,
+    author = {Yang, Lingchu and Fu, Zitong and H{\"a}mmerl, Kathy and Ito, Masaki},
+    title = {Zolint at WMT 2026: A Multitask LLM Submission for the Low-Resource Ukrainian Track},
+    booktitle = "Proceedings of the Eleventh Conference on Machine Translation",
+    month = oct,
+    year = "2026",
+    address = "Budapest, Hungary",
+    publisher = "Association for Computational Linguistics",
+    selected = {false},
+    bibtex_show = {true},
+    abstract = {We present a unified multi-task fine-tuning system submitted to the WMT 2026 Shared Task on Multitask LLMs with Limited Resources (Ukrainian track), covering machine translation, spelling correction, grammar correction, question answering, and mathematical reasoning. Our system is built on Qwen3.5-2B-Instruct and adopts a two-stage training pipeline that gradually introduces heterogeneous tasks while replaying selected data from earlier stages to mitigate catastrophic forgetting. The resulting model achieves a strong balance across all evaluated tasks, consistently outperforming the official baseline and obtaining the best performance on every task except question answering. Our results demonstrate that staged multi-task fine-tuning is an effective strategy for adapting compact multilingual LLMs under limited-resource constraints.},
+    preview = {zolint.png},
+}
+
 @misc{dementieva2026pluramathextendingmathematicalreasoning,
       title="PluraMath: Extending Mathematical Reasoning Evaluation Beyond High-Resource Languages",
       author={Daryna Dementieva and Nikolay Babakov and Kathy H{\"a}mmerl and Ilseyar Alimova and
@@ -76,7 +76,7 @@
       archivePrefix={arXiv},
       primaryClass={cs.CL},
       url="https://arxiv.org/abs/2607.05992",
-      abstract = "Mathematical reasoning has become a central task for evaluating and tuning reasoning Large Language Models (LLMs), yet existing benchmarks remain heavily biased toward high-resource languages, with English and Chinese dominating both pre-training corpora and evaluation suites. The recently released PolyMath (Wang et al., 2025) dataset represents a significant step forward, yet its coverage is still limited to 18 only high-resource languages. To address this gap, we introduce PluraMath, an extension of PolyMath to 18 additional {underrepresented languages spanning 6 language families -- ranging from mid-resource to extreme low-resource settings. We constructed the dataset through a human-curated pipeline, where native speakers thoroughly validated pre-computed translations. Using PluraMath, we then benchmark 27 reasoning LLMs across four model scales -- small, mid-size, large, and closed-source ensembles -- probing the multilingual mathematical reasoning capabilities of state-of-the-art models under diverse linguistic conditions. Our fine-grained analysis confirms a persistent gap in mathematical reasoning performance between high-resource and underrepresented languages, with stronger results largely associated with better instruction-following ability. We fully open-source our dataset, data acquisition pipeline, and evaluation framework, with the goal of lowering the barrier to multilingual benchmark development for underrepresented communities.",
+      abstract = "Mathematical reasoning has become a central task for evaluating and tuning reasoning Large Language Models (LLMs), yet existing benchmarks remain heavily biased toward high-resource languages, with English and Chinese dominating both pre-training corpora and evaluation suites. The recently released PolyMath (Wang et al., 2025) dataset represents a significant step forward, yet its coverage is still limited to 18 only high-resource languages. To address this gap, we introduce PluraMath, an extension of PolyMath to 18 additional underrepresented languages spanning 6 language families -- ranging from mid-resource to extreme low-resource settings. We constructed the dataset through a human-curated pipeline, where native speakers thoroughly validated pre-computed translations. Using PluraMath, we then benchmark 27 reasoning LLMs across four model scales -- small, mid-size, large, and closed-source ensembles -- probing the multilingual mathematical reasoning capabilities of state-of-the-art models under diverse linguistic conditions. Our fine-grained analysis confirms a persistent gap in mathematical reasoning performance between high-resource and underrepresented languages, with stronger results largely associated with better instruction-following ability. We fully open-source our dataset, data acquisition pipeline, and evaluation framework, with the goal of lowering the barrier to multilingual benchmark development for underrepresented communities.",
       bibtex_show = {true},
       preview = "pluramath.png",
 }
@@ -206,7 +206,7 @@
     pages = "756--767",
     ISBN = "979-8-89176-190-2",
     abstract = "Previous work has considered token overlap, or even similarity of token distributions, as predictors for multilinguality and cross-lingual knowledge transfer in language models. However, these very literal metrics assign large distances to language pairs with different scripts, which can nevertheless show good cross-linguality. This limits the explanatory strength of token overlap for knowledge transfer between language pairs that use distinct scripts or follow different orthographic conventions. In this paper, we propose subword token alignability as a new way to understand the impact and quality of multilingual tokenisation. In particular, this metric predicts multilinguality much better when scripts are disparate and the overlap of literal tokens is low. We analyse this metric in the context of both encoder and decoder models, look at data size as a potential distractor, and discuss how this insight may be applied to multilingual tokenisation in future work. We recommend our subword token alignability metric for identifying optimal language pairs for cross-lingual transfer, as well as to guide the construction of better multilingual tokenisers in the future. We publish our code and reproducibility details.",
-    selected = {true},
+    selected = {false},
     bibtex_show = {true},
     preview="alignability.png"
 }
