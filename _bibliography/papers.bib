@@ -1,6 +1,85 @@
 ---
 ---
 
+@inproceedings{haemmerl-etal-2026-locqe,
+    title = "LocQE: Principled Domain Adaptation for Localisation Quality Estimation by Leveraging Post-Edits",
+    author = "H{\"a}mmerl, Kathy and
+      Bretschner, Gabriel and
+      Wuebker, Joern",
+    booktitle = "Proceedings of the Eleventh Conference on Machine Translation",
+    month = oct,
+    year = "2026",
+    address = "Budapest, Hungary",
+    publisher = "Association for Computational Linguistics",
+    selected = {true},
+    bibtex_show = {true},
+    abstract = {Learned quality estimation (QE) models such as COMETKiwi are widespread and work well for general machine translation evaluation. However, they are known to struggle on unseen domains, limiting their performance in a real-world localisation context. We show that they are insensitive to some important factors in localisation, such as whether numbers are translated accurately, or even whether the correct number of spaces and punctuation are preserved in a translation. Further, a key capability for optimisation of machine translation is the ability of QE models to accurately rank different translations of a single segment, which suffers significantly from the domain transfer. In the absence of large-scale direct assessment data, we propose principled fine-tuning approaches to reduce the domain gap with even small amounts of post-editing data. Using a multi-task fine-tuning approach and a simple tokeniser intervention, we create a QE model which proves markedly better at distinguishing preferred post-edits from rejected initial translations in a localisation context. We show that preferences and artificial continuous scores stabilise each other, and argue that to calibrate metrics both in terms of their absolute scores and comparisons between translation of the same source, both types of signal are needed},
+    preview = {locqe.png},
+}
+
+@misc{ali2026predictingmultilingualclassificationtranslation,
+      title={Predicting Multilingual Classification and Translation Performance of LLMs with Cross-Lingual Alignment---Is English Enough?},
+      author={Adnan Al Ali and Kathy H{\"a}mmerl and Jind{\v{r}}ich Libovick{\'y} and Alexander Fraser},
+      year={2026},
+      eprint={2608.03446},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2608.03446},
+    abstract = {Multilingual large language models (LLMs) have been shown to perform better on non-English classification tasks when the representations of the given language are more aligned to English within the model. Several cross-lingual alignment (CLA) scores have been proposed for use with LLMs, along with multiple approaches for extracting embeddings from the models. We provide a comparative analysis of 27 CLA score variants, examining how they differ and how well each predicts downstream performance across three tasks. Crucially, while LLMs are widely used for generative tasks such as machine translation, prior work has focused almost exclusively on classification. We therefore investigate whether CLA scores are similarly predictive of translation performance. To enable computing correlations across target languages, we propose a PMI-based translation metric, which is less dependent on the target language and correlates strongly with chrF. We find that CLA with English predicts translation quality comparably to or better than source-target CLA, providing new evidence that LLMs use English as an internal pivot language.},
+    bibtex_show = {true},
+    preview = {value},
+}
+
+@inproceedings{zolint-2026,
+    author = {Yang, Lingchu and Fu, Zitong and H{\"a}mmerl, Kathy and Ito, Masaki},
+    title = {Zolint at WMT 2026: A Multitask LLM Submission for the Low-Resource Ukrainian Track},
+    booktitle = "Proceedings of the Eleventh Conference on Machine Translation",
+    month = oct,
+    year = "2026",
+    address = "Budapest, Hungary",
+    publisher = "Association for Computational Linguistics",
+    selected = {false},
+    bibtex_show = {true},
+    abstract = {We present a unified multi-task fine-tuning system submitted to the WMT 2026 Shared Task on Multitask LLMs with Limited Resources (Ukrainian track), covering machine translation, spelling correction, grammar correction, question answering, and mathematical reasoning. Our system is built on Qwen3.5-2B-Instruct and adopts a two-stage training pipeline that gradually introduces heterogeneous tasks while replaying selected data from earlier stages to mitigate catastrophic forgetting. The resulting model achieves a strong balance across all evaluated tasks, consistently outperforming the official baseline and obtaining the best performance on every task except question answering. Our results demonstrate that staged multi-task fine-tuning is an effective strategy for adapting compact multilingual LLMs under limited-resource constraints.},
+    preview = {zolint},
+}
+
+@inproceedings{okabe-etal-2026-findings,
+    title = "{Findings of the WMT26 Shared Task: Multitask LLMs with Limited Resources}",
+    author = "Okabe, Shu and
+      Di Marco, Marion and
+      H{\"a}mmerl, Kathy and
+      Dementieva, Daryna and
+      Edman, Lukas and
+      M{\v{e}}{\v{s}}kank, Marko and
+      Hendrichowa, Anita and
+      Fraser, Alexander",
+    booktitle = "Proceedings of the Eleventh Conference on Machine Translation",
+    month = oct,
+    year = "2026",
+    address = "Budapest, Hungary",
+    publisher = "Association for Computational Linguistics",
+    abstract = {We present the Findings of the WMT 2026 Shared Task on Multitask LLMs with Limited Resources. This year, we extended the Shared Task to jointly model five diverse NLP tasks, Machine Translation (MT) for five language pairs (eight directions), Question Answering (QA), Spell Checking (SC), Grammar Checking (GC), and Mathematical Reasoning (MR), for two language tracks: Ukrainian and Sorbian (grouping Upper and Lower Sorbian). As the Shared Task is focused on low-resource conditions, the model is restricted to Qwen3.5-2B to remain below the 3B-parameter threshold.\n\nIn total, six teams participated across the two language tracks: two in the Ukrainian and four in the Sorbian track. No team participated in both language tracks. All systems have been uploaded to HuggingFace by the participants. Despite our strict restrictions on model and dataset availability, systems were diverse in the resources they used as well as their training and inference strategies. The submitted systems show that a single small model can handle all five tasks, with clear difficulty shown for the challenging MR only.},
+    bibtex_show = {true},
+    preview = {findings_2026.png},
+}
+
+@misc{dementieva2026pluramathextendingmathematicalreasoning,
+      title="PluraMath: Extending Mathematical Reasoning Evaluation Beyond High-Resource Languages",
+      author={Daryna Dementieva and Nikolay Babakov and Kathy H{\"a}mmerl and Ilseyar Alimova and
+        Jindřich Libovický and Shu Okabe and Miras Baisbay and Lukas Edman and Abrorkhon Inomkhujaev and
+        Antonia Karamolegkou and Mateusz Lango and Volkan Özer and Nikola Selic and Subhankar Swain and
+        Tsedeniya Kinfe Temesgen and Galit Bary Weisberg and Alexander Fraser},
+      year={2026},
+      eprint={2607.05992},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url="https://arxiv.org/abs/2607.05992",
+      abstract = "Mathematical reasoning has become a central task for evaluating and tuning reasoning Large Language Models (LLMs), yet existing benchmarks remain heavily biased toward high-resource languages, with English and Chinese dominating both pre-training corpora and evaluation suites. The recently released PolyMath (Wang et al., 2025) dataset represents a significant step forward, yet its coverage is still limited to 18 only high-resource languages. To address this gap, we introduce PluraMath, an extension of PolyMath to 18 additional {underrepresented languages spanning 6 language families -- ranging from mid-resource to extreme low-resource settings. We constructed the dataset through a human-curated pipeline, where native speakers thoroughly validated pre-computed translations. Using PluraMath, we then benchmark 27 reasoning LLMs across four model scales -- small, mid-size, large, and closed-source ensembles -- probing the multilingual mathematical reasoning capabilities of state-of-the-art models under diverse linguistic conditions. Our fine-grained analysis confirms a persistent gap in mathematical reasoning performance between high-resource and underrepresented languages, with stronger results largely associated with better instruction-following ability. We fully open-source our dataset, data acquisition pipeline, and evaluation framework, with the goal of lowering the barrier to multilingual benchmark development for underrepresented communities.",
+      bibtex_show = {true},
+      preview = "pluramath.png",
+}
+
 @inproceedings{schmidtova-etal-2026-important,
     title = "How Important is `Perfect' {E}nglish for Machine Translation Prompts?",
     author = {Schmidtov{\'a}, Patr{\'i}cia  and
