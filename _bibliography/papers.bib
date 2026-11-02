@@ -2,67 +2,105 @@
 ---
 
 @inproceedings{haemmerl-etal-2026-locqe,
-    title = "LocQE: Principled Domain Adaptation for Localisation Quality Estimation by Leveraging Post-Edits",
-    author = "H{\"a}mmerl, Kathy and
-      Bretschner, Gabriel and
+    title = "{L}oc{QE}: Principled Domain Adaptation for Localisation Quality Estimation by Leveraging Post-Edits",
+    author = "H{\"a}mmerl, Kathy  and
+      Bretschner, Gabriel  and
       Wuebker, Joern",
+    editor = "Haddow, Barry  and
+      Kocmi, Tom  and
+      Koehn, Philipp  and
+      Monz, Christof",
     booktitle = "Proceedings of the Eleventh Conference on Machine Translation",
-    arxiv = {2609.18720},
     month = oct,
     year = "2026",
     address = "Budapest, Hungary",
     publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.wmt-main.12/",
+    doi = "10.18653/2026.wmt-main.12",
+    pages = "199--219",
+    ISBN = "979-8-89176-474-3",
+    abstract = "Learned quality estimation (QE) models such as COMETKiwi are widespread and work well for general machine translation evaluation. However, they are known to struggle on unseen domains, limiting their performance in a real-world localisation context. We show that they are insensitive to some important factors in localisation, such as whether numbers are translated accurately, or even whether the correct number of spaces and punctuation are preserved in a translation. Further, a key capability for optimisation of machine translation is the ability of QE models to accurately rank different translations of a single segment, which suffers significantly from the domain transfer. In the absence of large-scale direct assessment data, we propose principled fine-tuning approaches to reduce the domain gap with even small amounts of post-editing data. Using a multi-task fine-tuning approach and a simple tokeniser intervention, we create a QE model which proves markedly better at distinguishing preferred post-edits from rejected initial translations in a localisation context. We show that preferences and artificial continuous scores stabilise each other, and argue that to calibrate metrics both in terms of their absolute scores and comparisons between translation of the same source, both types of signal are needed.",
     selected = {true},
     bibtex_show = {true},
-    abstract = {Learned quality estimation (QE) models such as COMETKiwi are widespread and work well for general machine translation evaluation. However, they are known to struggle on unseen domains, limiting their performance in a real-world localisation context. We show that they are insensitive to some important factors in localisation, such as whether numbers are translated accurately, or even whether the correct number of spaces and punctuation are preserved in a translation. Further, a key capability for optimisation of machine translation is the ability of QE models to accurately rank different translations of a single segment, which suffers significantly from the domain transfer. In the absence of large-scale direct assessment data, we propose principled fine-tuning approaches to reduce the domain gap with even small amounts of post-editing data. Using a multi-task fine-tuning approach and a simple tokeniser intervention, we create a QE model which proves markedly better at distinguishing preferred post-edits from rejected initial translations in a localisation context. We show that preferences and artificial continuous scores stabilise each other, and argue that to calibrate metrics both in terms of their absolute scores and comparisons between translation of the same source, both types of signal are needed},
     preview = {locqe.png},
 }
 
-@misc{ali2026predictingmultilingualclassificationtranslation,
-      title={Predicting Multilingual Classification and Translation Performance of LLMs with Cross-Lingual Alignment---Is English Enough?},
-      author={Adnan Al Ali and Kathy H{\"a}mmerl and Jind{\v{r}}ich Libovick{\'y} and Alexander Fraser},
-      year={2026},
-      eprint={2608.03446},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      arxiv={2608.03446},
-      abstract = {Multilingual large language models (LLMs) have been shown to perform better on non-English classification tasks when the representations of the given language are more aligned to English within the model. Several cross-lingual alignment (CLA) scores have been proposed for use with LLMs, along with multiple approaches for extracting embeddings from the models. We provide a comparative analysis of 27 CLA score variants, examining how they differ and how well each predicts downstream performance across three tasks. Crucially, while LLMs are widely used for generative tasks such as machine translation, prior work has focused almost exclusively on classification. We therefore investigate whether CLA scores are similarly predictive of translation performance. To enable computing correlations across target languages, we propose a PMI-based translation metric, which is less dependent on the target language and correlates strongly with chrF. We find that CLA with English predicts translation quality comparably to or better than source-target CLA, providing new evidence that LLMs use English as an internal pivot language.},
-      bibtex_show = {true},
-      selected = {true},
-      preview = {cla_combination.png},
+
+@inproceedings{al-ali-etal-2026-predicting,
+    title = "Predicting Multilingual Classification and Translation Performance of {LLM}s with Cross-Lingual Alignment {--} Is {E}nglish Enough?",
+    author = {Al Ali, Adnan  and
+      H{\"a}mmerl, Kathy  and
+      Libovick{\'y}, Jind{\v{r}}ich  and
+      Fraser, Alexander},
+    editor = "Lee, Hung-Yi  and
+      Dev, Sunipa  and
+      Li, Jessy  and
+      Elliott, Desmond",
+    booktitle = "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing",
+    month = oct,
+    year = "2026",
+    address = "Budapest, Hungary",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.emnlp-main.162/",
+    doi = "10.18653/2026.emnlp-main.162",
+    pages = "3719--3741",
+    ISBN = "979-8-89176-459-0",
+    abstract = "Multilingual large language models (LLMs) have been shown to perform better on non-English classification tasks when the representations of the given language are more aligned to English within the model. Several cross-lingual alignment (CLA) scores have been proposed for use with LLMs, along with multiple approaches for extracting embeddings from the models. We provide a comparative analysis of 27 CLA score variants, examining how they differ and how well each predicts downstream performance across three tasks. Crucially, while LLMs are widely used for generative tasks such as machine translation, prior work has focused almost exclusively on classification. We therefore investigate whether CLA scores are similarly predictive of translation performance. To enable computing correlations across target languages, we propose a PMI-based translation metric, which is less dependent on the target language and correlates strongly with CHRF. We find that CLA with English predicts translation quality comparably to or better than source{--}target CLA, providing new evidence that LLMs use English as an internal pivot language.",
+    bibtex_show = {true},
+    selected = {true},
+    preview = {cla_combination.png},
 }
 
 @inproceedings{okabe-etal-2026-findings,
-    title = "{Findings of the WMT26 Shared Task: Multitask LLMs with Limited Resources}",
-    author = "Okabe, Shu and
-      Di Marco, Marion and
-      H{\"a}mmerl, Kathy and
-      Dementieva, Daryna and
-      Edman, Lukas and
-      M{\v{e}}{\v{s}}kank, Marko and
-      Hendrichowa, Anita and
+    title = "Findings of the {WMT} 2026 Shared Task: Multitask {LLM}s with Limited Resources",
+    author = "Okabe, Shu  and
+      Di Marco, Marion  and
+      H{\"a}mmerl, Kathy  and
+      Dementieva, Daryna  and
+      Edman, Lukas  and
+      M{\v{e}}{\v{s}}kank, Marko  and
+      Hendrichowa, Anita  and
       Fraser, Alexander",
+    editor = "Haddow, Barry  and
+      Kocmi, Tom  and
+      Koehn, Philipp  and
+      Monz, Christof",
     booktitle = "Proceedings of the Eleventh Conference on Machine Translation",
     month = oct,
     year = "2026",
     address = "Budapest, Hungary",
     publisher = "Association for Computational Linguistics",
-    abstract = {We present the Findings of the WMT 2026 Shared Task on Multitask LLMs with Limited Resources. This year, we extended the Shared Task to jointly model five diverse NLP tasks, Machine Translation (MT) for five language pairs (eight directions), Question Answering (QA), Spell Checking (SC), Grammar Checking (GC), and Mathematical Reasoning (MR), for two language tracks: Ukrainian and Sorbian (grouping Upper and Lower Sorbian). As the Shared Task is focused on low-resource conditions, the model is restricted to Qwen3.5-2B to remain below the 3B-parameter threshold.\n\nIn total, six teams participated across the two language tracks: two in the Ukrainian and four in the Sorbian track. No team participated in both language tracks. All systems have been uploaded to HuggingFace by the participants. Despite our strict restrictions on model and dataset availability, systems were diverse in the resources they used as well as their training and inference strategies. The submitted systems show that a single small model can handle all five tasks, with clear difficulty shown for the challenging MR only.},
+    url = "https://aclanthology.org/2026.wmt-main.59/",
+    doi = "10.18653/2026.wmt-main.59",
+    pages = "1180--1202",
+    ISBN = "979-8-89176-474-3",
+    abstract = "We present the Findings of the WMT 2026 Shared Task on Multitask LLMs with Limited Resources. This year, we extended the Shared Task to jointly model five diverse NLP tasks, Machine Translation (MT) for five language pairs (eight directions), Question Answering (QA), Spell Checking (SC), Grammar Checking (GC), and Mathematical Reasoning (MR), for two language tracks: Ukrainian and Sorbian (grouping Upper and Lower Sorbian). As the Shared Task is focused on low-resource conditions, the model is restricted to Qwen3.5-2B to remain below the 3B-parameter threshold.\par In total, six teams participated across the two language tracks: two in the Ukrainian and four in the Sorbian track. No team participated in both language tracks. All systems have been uploaded to HuggingFace by the participants. Despite our strict restrictions on model and dataset availability, systems were diverse in the resources they used as well as their training and inference strategies. The submitted systems show that a single small model can handle all five tasks, with clear difficulty shown for the challenging MR only.",
     bibtex_show = {true},
     preview = {findings_2026.png},
 }
 
-@inproceedings{zolint-2026,
-    author = {Yang, Lingchu and Fu, Zitong and H{\"a}mmerl, Kathy and Ito, Masaki},
-    title = {Zolint at WMT 2026: A Multitask LLM Submission for the Low-Resource Ukrainian Track},
+@inproceedings{yang-etal-2026-zolint,
+    title = "Zolint at {WMT} 2026: A Multitask {LLM} Submission for the Low-Resource {U}krainian Track",
+    author = {Yang, Lingchu  and
+      Fu, Zitong  and
+      H{\"a}mmerl, Kathy  and
+      Ito, Masaki},
+    editor = "Haddow, Barry  and
+      Kocmi, Tom  and
+      Koehn, Philipp  and
+      Monz, Christof",
     booktitle = "Proceedings of the Eleventh Conference on Machine Translation",
     month = oct,
     year = "2026",
     address = "Budapest, Hungary",
     publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.wmt-main.213/",
+    doi = "10.18653/2026.wmt-main.213",
+    pages = "2689--2696",
+    ISBN = "979-8-89176-474-3",
+    abstract = "We present a unified multi-task fine-tuning system submitted to the WMT 2026 Shared Task on Multitask LLMs with Limited Resources (Ukrainian track), covering machine translation, spelling correction, grammar correction, question answering, and mathematical reasoning. Our system is built on Qwen3.5-2B-Instruct and adopts a two-stage training pipeline that gradually introduces heterogeneous tasks while replaying selected data from earlier stages to mitigate catastrophic forgetting. The resulting model achieves a strong balance across all evaluated tasks, consistently outperforming the official baseline and obtaining the best performance on every task except question answering. Our results demonstrate that staged multi-task fine-tuning is an effective strategy for adapting compact multilingual LLMs under limited-resource constraints.",
     selected = {false},
     bibtex_show = {true},
-    abstract = {We present a unified multi-task fine-tuning system submitted to the WMT 2026 Shared Task on Multitask LLMs with Limited Resources (Ukrainian track), covering machine translation, spelling correction, grammar correction, question answering, and mathematical reasoning. Our system is built on Qwen3.5-2B-Instruct and adopts a two-stage training pipeline that gradually introduces heterogeneous tasks while replaying selected data from earlier stages to mitigate catastrophic forgetting. The resulting model achieves a strong balance across all evaluated tasks, consistently outperforming the official baseline and obtaining the best performance on every task except question answering. Our results demonstrate that staged multi-task fine-tuning is an effective strategy for adapting compact multilingual LLMs under limited-resource constraints.},
     preview = {zolint.png},
 }
 
