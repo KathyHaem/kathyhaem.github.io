@@ -60,6 +60,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/20261006_emnlp_wmt/";
+            },},{id: "news-co-organising-wlcd-workshop-at-coling",
+          title: 'Co-organising WLCD Workshop at COLING',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/20261124_wlcd-announcement/";
             },},{
         id: 'social-cv',
         title: 'CV',
